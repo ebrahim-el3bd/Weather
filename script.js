@@ -90,7 +90,14 @@ function weatherDetails(info){
         wrapper.classList.add("active");
     }
 }
-
 arrowBack.addEventListener("click", ()=>{
     wrapper.classList.remove("active");
 });
+
+$(document).ready(function () {
+    $(".loading .pl").fadeOut(1000,function(){
+        $(".loading").fadeOut(1000)
+    });
+});
+
+
